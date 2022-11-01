@@ -88,7 +88,7 @@ function Header({}: Props) {
 
       <hr />
 
-      <section>
+      <section className="flex py-3 space-x-6 text-xs md:text-sm whitespace-nowrap justify-center">
         <p className="link">Home</p>
         <p className="link">Electronics</p>
         <p className="link">Computers</p>
