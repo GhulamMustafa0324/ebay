@@ -15,9 +15,6 @@ const Home = () => {
 
   const { data: listings, isLoading: loadingListings } =
     useActiveListings(contract);
-
-  console.log("first");
-  console.log(listings);
   return (
     <div className="">
       <Header />
@@ -29,7 +26,7 @@ const Home = () => {
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mx-auto">
             {listings?.map((listing) => (
-              <div className="card " key={listing.id}>
+              <div className="card hover:scale-105 " key={listing.id}>
                 <div className="flex-1 flex flex-col pb-2 items-center">
                   <MediaRenderer className="w-44" src={listing.asset.image} />
                 </div>
